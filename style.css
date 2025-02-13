@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF9F6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #F8F5F0;
+}
+
+header h1 {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.menu-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+/* Description */
+.description {
+    padding: 15px;
+    background: #F8F5F0;
+}
+
+.category {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Réalisations Section */
+.realisations {
+    padding: 20px;
+    background: white;
+}
+
+.realisations h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.underline {
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+}
+
+
+.loader {
+ display: inline-block;
+ position: relative;
+ width: 80px;
+ height: 80px;
+ transform: rotate(45deg);
+ transform-origin: 40px 40px;
+}
+
+.loader div {
+ top: 32px;
+ left: 32px;
+ position: absolute;
+ width: 32px;
+ height: 32px;
+ background: red;
+ animation: loader45 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader div:after,
+.loader div:before {
+ content: " ";
+ position: absolute;
+ display: block;
+ width: 32px;
+ height: 32px;
+ background: red;
+}
+
+.loader div:before {
+ left: -24px;
+ border-radius: 50% 0 0 50%;
+}
+
+.loader div:after {
+ top: -24px;
+ border-radius: 50% 50% 0 0;
+}
+
+@keyframes loader45 {
+ 0% {
+  transform: scale(0.95);
+ }
+
+ 5% {
+  transform: scale(1.1);
+ }
+
+ 39% {
+  transform: scale(0.85);
+ }
+
+ 45% {
+  transform: scale(1);
+ }
+
+ 60% {
+  transform: scale(0.95);
+ }
+
+ 100% {
+  transform: scale(0.9);
+ }
+}
